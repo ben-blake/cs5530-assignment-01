@@ -23,7 +23,7 @@ def analyze_data():
     print(f"Loaded {df.shape[0]} records with {df.shape[1]} variables")
     
     # Select numeric columns for summary statistics
-    numeric_cols = ['Height', 'Weight', 'Height_m', 'Weight_kg', 'Age', 'Grip strength', 'BMI']
+    numeric_cols = ['Height', 'Weight', 'Height_m', 'Weight_kg', 'BMI', 'Age', 'Grip_kg']
     
     # Compute summary statistics
     print("Computing summary statistics...")
@@ -35,9 +35,9 @@ def analyze_data():
     # Rearrange columns for better readability
     summary = summary[['mean', 'median', 'std']]
     
-    # Calculate correlation between Grip strength and Frailty
+    # Calculate correlation between Grip_kg and Frailty_binary
     print("Calculating correlations...")
-    correlation = df['Grip strength'].corr(df['Frailty_binary'])
+    correlation = df['Grip_kg'].corr(df['Frailty_binary'])
     
     # Generate findings report
     print("Generating findings report...")
@@ -51,7 +51,7 @@ def analyze_data():
         f.write("\n\n")
         
         f.write("## Relationship between Grip Strength and Frailty\n\n")
-        f.write(f"Correlation between Grip strength and Frailty_binary: {correlation:.4f}\n\n")
+        f.write(f"Correlation between Grip_kg and Frailty_binary: {correlation:.4f}\n\n")
         
         if correlation < 0:
             f.write("The negative correlation indicates that **higher** grip strength is associated with **lower** frailty (Frailty_binary=0 means N).\n")
@@ -67,4 +67,4 @@ def analyze_data():
 
 if __name__ == "__main__":
     summary, correlation = analyze_data()
-    print(f"Data analysis complete. Correlation between Grip strength and Frailty_binary: {correlation:.4f}")
+    print(f"Data analysis complete. Correlation between Grip_kg and Frailty_binary: {correlation:.4f}")

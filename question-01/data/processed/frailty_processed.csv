@@ -1,4 +1,4 @@
-Height,Weight,Age,Grip strength,Frailty,Height_m,Weight_kg,BMI,AgeGroup,Frailty_binary,AgeGroup_30–45,AgeGroup_46–60,AgeGroup_<30
+Height,Weight,Age,Grip_kg,Frailty,Height_m,Weight_kg,BMI,AgeGroup,Frailty_binary,AgeGroup_30–45,AgeGroup_46–60,AgeGroup_<30
 65.8,112,30,30,N,1.67132,50.80234544,18.19,30-45,0,1,0,0
 71.5,136,19,31,N,1.8160999999999998,61.68856232,18.7,<30,0,0,0,1
 69.4,153,45,29,N,1.76276,69.39963261,22.33,30-45,0,1,0,0

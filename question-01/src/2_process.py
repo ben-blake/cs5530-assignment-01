@@ -20,6 +20,9 @@ def process_data():
     # Load raw data
     df = pd.read_csv(raw_data_path)
     print(f"Loaded {df.shape[0]} records with {df.shape[1]} variables")
+
+    # Rename grip strength to Grip_kg
+    df.rename(columns={'Grip strength': 'Grip_kg'}, inplace=True)
     
     # Unit standardization
     print("Standardizing units...")

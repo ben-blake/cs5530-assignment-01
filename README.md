@@ -8,7 +8,7 @@ Ben Blake \<bebpph@umsystem.edu\>
 
 Implement a three-stage data workflow (ingest → process → analyze) for analyzing frailty data from 10 female participants.
 
-Findings are located in `question-01/reports/findings.md`.
+Findings are located in [question-01/reports/findings.md](https://github.com/ben-blake/cs5530-assignment-01/blob/main/question-01/reports/findings.md)
 
 ### Structure
 
@@ -53,7 +53,7 @@ question-01/
 
 Implement a three-stage data workflow (ingest → process → visualize) for analyzing student performance data, with five distinct visualization tasks.
 
-Visualizations and interpretions are located in `question-02/reports/`.
+Visualizations and interpretions are located in [question-02/reports/visualization_findings.md](https://github.com/ben-blake/cs5530-assignment-01/blob/main/question-02/reports/visualization_findings.md)
 
 ### Structure
 
